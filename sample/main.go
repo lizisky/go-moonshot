@@ -1,4 +1,4 @@
-https://github.com/MoonshotAI/MoonshotAI-Cookbook/tree/master/examples/golang_demopackage main
+package main
 
 import (
 	"context"
@@ -146,7 +146,7 @@ func chat_stream_one() {
 	for chunk := range stream.C {
 		fmt.Printf("%s", chunk.GetDeltaContent())
 	}
-	fmt.Println("")
+	fmt.Println("finish ")
 }
 
 // 聊天，流式返回
@@ -234,7 +234,7 @@ func main() {
 	// EstimateTokenCount()
 	// EstimateTokenCount()
 	// getBalance()
-	// chat_stream_one()
-	chat_stream_two()
+	chat_stream_one()
+	// chat_stream_two()
 	// retrieveFileContent()
 }
